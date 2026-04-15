@@ -87,7 +87,7 @@ House-Prices/
 სამი სხვადასხვა მიდგომა გამოვიყენე:
 
 ### ➤ მიდგომა 1: Correlation Filter
-კორელაცია `SalePrice`-თან `|r| > 0.1`. მარტივი და სწრაფი მიდგომა, თუმცა ვერ ჭერს არახაზოვან კავშირებს.
+კორელაცია `SalePrice`-თან `|r| > 0.1`. მარტივი და სწრაფი მიდგომა, თუმცა ვერ იჭერს არახაზოვან კავშირებს.
 
 ### ➤ მიდგომა 2: Lasso Selection
 `Lasso(alpha=0.001)` — coefficient = 0 მქონე სვეტები ამოვაგდე. L1 regularization-ი ავტომატურად ახდენს feature selection-ს.
@@ -110,7 +110,7 @@ House-Prices/
 
 ---
 
-## 📐 Linear Models
+##  Linear Models
 
 ### 🔹 Model 1: Linear Regression (Baseline)
 
