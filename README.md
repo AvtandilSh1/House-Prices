@@ -98,11 +98,15 @@ House-Prices/
 ### ➤ საბოლოო შედეგი
 სამივე მიდგომის **Union** — სვეტი დარჩა თუ ერთ-ერთ მიდგომაში მოხვდა. ეს მინიმუმამდე ამცირებს ინფორმაციის დაკარგვის რისკს.
 
+![Feature Selection](images/feature_selection.png)
+
 ---
 
 ## 🧪 Training
 
-ყველა მოდელი შეფასდა **5-Fold Cross Validation**-ით. ძირითადი მეტრიკა: `CV RMSE`. Overfitting-ის შესაფასებლად ვიყენებდი `overfit_gap = |CV RMSE − Train RMSE|`.
+ყველა მოდელი შეფასდა **5-Fold Cross Validation**-ით.
+
+![All Models Comparison](images/all_models_comparison.png) ძირითადი მეტრიკა: `CV RMSE`. Overfitting-ის შესაფასებლად ვიყენებდი `overfit_gap = |CV RMSE − Train RMSE|`.
 
 ---
 
@@ -169,6 +173,8 @@ Train RMSE: 0.17887
 | 500 | 0.12777 | 0.12342 | Strong Underfitting |
 | 5000 | 0.19154 | 0.17887 | Extreme Underfitting |
 
+![Ridge Comparison](images/ridge_comparison.png)
+
 ---
 
 ### 🔹 Model 3: Lasso Regression (L1 Regularization)
@@ -210,6 +216,8 @@ Train RMSE: 0.21675
 | 0.001 | 0.11523 | 0.10845 | Underfitting |
 | 0.01 | 0.13430 | 0.13136 | Strong Underfitting |
 | 0.1 | 0.21719 | 0.21675 | Extreme Underfitting |
+
+![Lasso Comparison](images/lasso_comparison.png)
 
 ---
 
@@ -256,6 +264,8 @@ Overfit gap: 0.191 ⚠️⚠️⚠️
 | 5 | 0.17732 | 0.13924 | 0.038 | Overfitting იწყება |
 | 10 | 0.19004 | 0.05868 | 0.131 | Strong Overfitting |
 | None | 0.19159 | 0.00104 | 0.191 | Extreme Overfitting |
+
+![Decision Tree Overfitting](images/decision_tree_overfitting.png)
 
 ---
 
